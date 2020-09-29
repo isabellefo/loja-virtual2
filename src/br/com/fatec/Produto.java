@@ -14,8 +14,13 @@ public abstract class Produto {
 		return nome;
 	}
 	
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setDesc(String marca, String peso, String tamanho, String modelo, String outros) {
+		marca = "Marca: "+marca+"\n";
+		peso= "Peso: "+peso+"\n";
+		tamanho = "Tamanho: "+tamanho+"\n";
+		modelo = "Modelo: " + modelo +"\n";
+		outros = "Informações adicionais: "+ outros +"\n";
+		this.desc = marca + peso + tamanho + modelo + outros;
 	}
 	
 	public String getDesc() {

@@ -29,5 +29,14 @@ public class ProdutoComposto extends Produto{
 		}
 		return nomes;
 	}
+	
+	@Override
+	public String getDesc(){
+		String desc = "";
+		for(Produto prod : produtos) {
+			desc += "\n" +"- "+ prod.getDesc() ;
+		}
+		return desc ;
+	}
 
 }
